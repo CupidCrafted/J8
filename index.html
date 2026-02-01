@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temis Jewelry | The Royal Collection</title>
+    <style>
+        body {
+            background-color: #4A0404; /* Deep Royal Burgundy */
+            background: radial-gradient(circle, #5e0505 0%, #2b0202 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Didot', 'Bodoni MT', 'Georgia', serif;
+            color: #D4AF37; /* Antique Gold */
+            overflow: hidden;
+        }
+
+        #poster-container {
+            text-align: center;
+            z-index: 10;
+            max-width: 650px;
+            width: 90%;
+            padding: 40px;
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+        }
+
+        .brand-signature {
+            font-size: 0.8rem;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            opacity: 0.8;
+            font-family: sans-serif;
+        }
+
+        .philosophy {
+            font-size: 1.05rem;
+            line-height: 1.6;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+            font-style: italic;
+            color: #E5D1B1; /* Champagne Gold */
+            max-width: 480px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .main-title {
+            font-size: 2.6rem; /* Reduced size for better balance */
+            font-weight: 700;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: 0.9rem;
+            letter-spacing: 4px;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            text-transform: uppercase;
+        }
+
+        .question {
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+            color: #D4AF37;
+        }
+
+        /* Perfectly Aligned 11 Legends Grid */
+        #silhouette-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 12px;
+            margin: 20px auto;
+            max-width: 420px;
+            justify-items: center;
+        }
+
+        /* Adjusting the last row of the grid for symmetry */
+        .piece-placeholder {
+            width: 50px;
+            height: 70px;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.35) 0%, rgba(184, 134, 11, 0.05) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 1px;
+            box-shadow: inset 0 0 10px rgba(212, 175, 55, 0.1);
+        }
+
+        .status-container {
+            margin-top: 40px;
+        }
+
+        .live-now {
+            font-size: 1.8rem;
+            letter-spacing: 5px;
+            font-weight: bold;
+            color: #FFFFFF;
+            text-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="poster-container">
+        <div class="brand-signature">Temis Jewelry</div>
+        
+        <div class="philosophy">
+            We all grew up with our princesses. They shaped how we dreamed, and how we imagined elegance. But dreams grow up, too.
+        </div>
+
+        <h1 class="main-title">The Royal Collection</h1>
+        <div class="subtitle">11 Legends. Reimagined.</div>
+
+        <div class="question">Which princess belongs in your story?</div>
+
+        <div id="silhouette-grid">
+            <div class="piece-placeholder"></div><div class="piece-placeholder"></div>
+            <div class="piece-placeholder"></div><div class="piece-placeholder"></div>
+            <div class="piece-placeholder"></div><div class="piece-placeholder"></div>
+            <div class="piece-placeholder"></div><div class="piece-placeholder"></div>
+            <div class="piece-placeholder"></div><div class="piece-placeholder"></div>
+            <div class="piece-placeholder"></div>
+        </div>
+
+        <div class="status-container">
+            <div class="live-now">LIVE NOW</div>
+        </div>
+    </div>
+
+</body>
+</html>
